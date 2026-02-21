@@ -473,7 +473,8 @@
     data-blur-shadow="true"
   {% endif %}
 >
-  <section class="hero">
+  
+<section class="hero">
   <video autoplay muted loop playsinline class="hero__video">
     <source src="{{ section.settings.hero_video | file_url }}" type="video/mp4">
   </video>
@@ -483,29 +484,10 @@
     <a href="{{ section.settings.hero_button_link }}" class="btn">{{ section.settings.hero_button_text }}</a>
   </div>
 </section>
+  
 </div>
 
 {% stylesheet %}
-  .hero__content .btn {
-    display: inline-block;
-    padding: 14px 32px;
-    background-color: #000; /* cor de fundo do botão */
-    color: #fff; /* cor do texto */
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-
-  .hero__content .btn:hover {
-    background-color: #333; /* cor no hover */
-    transform: translateY(-2px); /* leve efeito de movimento */
-  }
-
   .hero-wrapper {
     --hero-height-offset: 0px;
   }
